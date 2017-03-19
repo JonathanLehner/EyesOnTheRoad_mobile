@@ -201,7 +201,7 @@ angular.module('myspotify.controllers', [])
               }
                */
               ble.startScan([], function(device) {
-                if(device.id == "FC:D6:BD:10:08:E3" && device.name == "EyesOnTheRoad"){
+                if(device.id == "FC:D6:BD:10:08:E3" /*&& device.name == "EyesOnTheRoad"*/){
                   //alert("success");
                   $scope.updateInfo();
                 }
